@@ -1,0 +1,339 @@
+<!-- DAAA/FT/1B/04
+P2026309
+Tan Yu Hoe -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SP Games</title>
+
+    <!-- Favicons -->
+    <link href="/assets/img/sp-logo.png" rel="icon" type="image/x-icon">
+    <link href="/assets/img/sp-logo.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: FlexStart - v1.0.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/abb9f74799.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="/" class="logo d-flex align-items-center">
+                <i class="fas fa-gamepad fa-2x text-danger"></i>
+                <span class="text-danger">&nbsp;SP&nbsp;Games</span>
+                <br>
+            </a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link text-black" href="/">Home</a></li>
+                    <li><a class="nav-link text-black" href="/#about">About</a></li>
+                    <li><a class="nav-link text-black" href="/games">Games</a></li>
+                    <li id="logbtn"><a class="nav-link login text-black" href="/login">Login</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main>
+
+
+        <section>
+            <div id="services" class="services">
+                <header class="section-header" data-aos="fade-up">
+                    <p>Admin Page</p>
+                </header>
+            </div>
+
+        </section>
+
+        <section id="services" class="services">
+
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header">
+                    <h2>Add new cateogry</h2>
+                    <p>All Categories</p>
+                </header>
+
+                <div class="row gy-4" id="catlist">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======= Submit game Section ======= -->
+        <section id="contact" class="contact">
+
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header">
+                    <h2>Insert Game</h2>
+                    <p>Insert a new game into the database</p>
+                </header>
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6" style="float: none; margin: 0 auto;">
+                        <form id="newgame" method="post" enctype="multipart/form-data">
+                            <div class="row gy-4">
+
+                                <div class="col-md-12">
+                                    <input type="text" name="Title" class="form-control" placeholder="Title" id='title'
+                                        required>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" name="platform" placeholder="Platform"
+                                        id='platform' required>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <input type="number" class="form-control" name="price" placeholder="Price"
+                                        id='price' min="0" step="0.01" required>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <input type="year" class="form-control" name="year" placeholder="Year" id='year'
+                                        required>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <select name="Category" id="bigcat" class="form-select" required>
+                                        <option value="" disabled selected hidden>Category</option>
+                                    </select>
+                                </div>
+
+                                <!-- img uploading -->
+                                <div class="col-md-12">
+                                    <input type="file" class="custom-file-input" name="image" placeholder="img"
+                                        id='img'>
+                                </div>
+
+
+                                <div class="col-md-12">
+                                    <textarea class="form-control" name="gamedescription" rows="6"
+                                        placeholder="Description" id='gamedescription' required></textarea>
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn-primary btn" style="border-radius:10px;">Insert
+                                        Game</button>
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section><!-- End Contact Section -->
+
+        <!-- edit respective user's information -->
+        <section id="contact" class="contact">
+
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header">
+                    <h2>Edit user's admin priviledges</h2>
+                    <p>Update database user's admin priviledges</p>
+                </header>
+
+                <div class="row align-items-center justify-content-center col-6" style="float: none; margin: 0 auto;">
+                    <table class="table table-striped" id="usertable">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Username</th>
+                                <th scope="col">Type</th>
+                            </tr>
+                        </thead>
+                        <tbody id="userbody">
+
+                        </tbody>
+                    </table>
+                </div>
+                
+                <br>
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6" style="float: none; margin: 0 auto;">
+                        <form id="edituser" method="put" enctype="multipart/form-data">
+                            <div class="row gy-4">
+
+                                <div class="col-md-12">
+                                    <select type="text" name="username" class="form-control" placeholder="Title"
+                                        id='selectUser' required>
+                                        <option value="" disabled selected>Select User</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <select type="text" name="permission" class="form-control"
+                                        placeholder="editPermission" id='editPermission' required>
+                                        <option value="" disabled selected>Admin Permission</option>
+                                        <option value="admin">Admin</option>
+                                        <option value="customer">Customer</option>
+                                    </select>
+                                </div>
+
+                                <div class=" text-center">
+                                    <button type="submit" class="btn-primary btn" style="border-radius:10px;">Change
+                                        permission</button>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section><!-- End Contact Section -->
+
+    </main>
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-5 col-md-12 footer-info">
+                        <a href="/" class="logo d-flex align-items-center">
+                            <i class="fas fa-gamepad fa-2x text-danger"></i>
+                            <span class="text-danger">&nbsp;SP&nbsp;Games</span>
+                        </a>
+                        <p>Gamers, Streamers, Dreamers</p>
+                        <div class="social-links mt-3">
+                            <a href="" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/tan-yu-hoe-6728891ab/" target="_blank"
+                                class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a href="/#">Home</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="/#about">About us</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                        <h4>Contact Us</h4>
+                        <p>
+                            Singapore Polytechnic<br>
+                            500 Dover Rd<br>
+                            Singapore 139651<br>
+                            <strong>Phone:</strong> +65 67751133 <br>
+                            <strong>Email:</strong> contactus@sp.edu.sg<br>
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>SP Game</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+                Template Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Vendor JS Files -->
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="/assets/vendor/aos/aos.js"></script>
+    <script src="/assets/vendor/php-email-form/validate.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/vendor/purecounter/purecounter.js"></script>
+    <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <!-- CDN Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+    <!-- Template Main JS File -->
+    <script src="/assets/js/main.js"></script>
+
+    <!-- Login/Logout Button -->
+    <script src="/assets/js/logbtn.js"></script>
+
+    <!-- authenticate admin -->
+    <script src="/assets/js/authAdmin.js"></script>
+
+    <!-- js script for page -->
+    <script src='/assets/js/admin.js'></script>
+
+    <!-- edit user's information -->
+    <script src="/assets/js/editAdmin.js"></script>
+</body>
+
+</html>

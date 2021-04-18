@@ -1,0 +1,17 @@
+{
+  "name": "ca2-client",
+  "version": "1.0.0",
+  "description": "ca2 client side respository",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TYH",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "form-data": "^3.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
